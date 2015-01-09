@@ -7,9 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
+#import <FacebookSDK/FacebookSDK.h>
+#import "PageContentViewController.h"
+#import "KYLoginViewController.h"
+#import "KYRegisterViewController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : BaseViewController<UIPageViewControllerDataSource>
 
+
+@property (strong, nonatomic) UIPageViewController *pageViewController;
+@property (strong, nonatomic) NSArray *pageImages;
 
 @end
 
